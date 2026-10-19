@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean name="school1" class="com.linkcode.spring.springCore.schoolBean">
+	<property name="no">
+	<value>101</value>
+	</property>
+	<property name="scname" value="modern"></property>
+	<property name="add" value="pune">
+	
+	</property>
+	<property name="student" ref="student1"></property>
+	</bean>
+    <!-- bean definitions here -->
+	<bean name="student1" class="com.linkcode.spring.springCore.StudentBean">
+	<property name="roll">
+	<value>1</value>
+	</property>
+	<property name="sname" value="ram"></property>
+	<property name="marks">
+	<value>89.78</value>
+	</property>
+	</bean>
+</beans>
